@@ -22,11 +22,13 @@ project "yaml-cpp"
 
 	filter "system:windows"
 		systemversion "latest"
+		cppdialect "C++20"
 		staticruntime "off"
 
 	filter "system:linux"
 		pic "On"
 		systemversion "latest"
+		cppdialect "C++20"
 		staticruntime "off"
 
 	filter "configurations:Debug"
